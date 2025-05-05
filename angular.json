@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "js-concurency": {
+    "sita-test": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/js-concurency",
+            "outputPath": "dist/sita-test",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "js-concurency:build:production"
+              "buildTarget": "sita-test:build:production"
             },
             "development": {
-              "buildTarget": "js-concurency:build:development"
+              "buildTarget": "sita-test:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -1,0 +1,11 @@
+<h1>Check license plate</h1>
+
+<form (ngSubmit)="onSubmit()">
+  <label for="index">Index:</label>
+  <input type="text" [(ngModel)]="index" name="index" placeholder="Enter index" required />
+  <button type="submit">Submit</button>
+</form>
+
+<h2>License plate:</h2>
+<p *ngIf="licensePlate">{{ licensePlate }}</p>
+
